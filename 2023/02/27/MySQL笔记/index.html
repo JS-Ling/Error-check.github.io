@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MySql从入门到删库跑路 | RogevnBlog</title>
+  <meta name="keywords" content=" 技术 ">
+  <meta name="description" content="MySql从入门到删库跑路 | RogevnBlog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Hourly Payment            $29h                 Amet lorem.     Dolor ipsum     Sit amet     Lorem dolor         Order now">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="https://ljs-yym.github.io/categories/index.html">
+<meta property="og:site_name" content="RogevnBlog">
+<meta property="og:description" content="Hourly Payment            $29h                 Amet lorem.     Dolor ipsum     Sit amet     Lorem dolor         Order now">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-11-16T02:46:27.000Z">
+<meta property="article:modified_time" content="2023-03-09T00:56:57.801Z">
+<meta property="article:author" content="Rogers">
+<meta property="article:tag" content="hexo,node,博客">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Rogers</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(12)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="数据库">
+                        
+                        数据库
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="前端">
+                        
+                        前端
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="设计模式">
+                        
+                        设计模式
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="系统">
+                        
+                        系统
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Java">
+                        
+                        Java
+                        <small>(7)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="12">
+<input type="hidden" id="yelog_site_word_count" value="48.9k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>技术</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 Java "
+           href="/2023/03/07/Mybatis/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="Mybatis持久层框架">Mybatis持久层框架</span>
+            <span class="post-date" title="2023-03-07 09:43:33">2023/03/07</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2023/03/07/Spring/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="Spring makes Java simple|modern|productive|reactive|cloud-ready">Spring makes Java simple|modern|productive|reactive|cloud-ready</span>
+            <span class="post-date" title="2023-03-07 09:40:02">2023/03/07</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2023/03/07/Spring%E6%95%B4%E5%90%88Mybatis/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="Spring整合Mybatis操作数据库">Spring整合Mybatis操作数据库</span>
+            <span class="post-date" title="2023-03-07 08:24:12">2023/03/07</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 "
+           href="/2023/02/28/Web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="前端从入门到入土">前端从入门到入土</span>
+            <span class="post-date" title="2023-02-28 23:12:24">2023/02/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2023/02/28/Jave%20EE%E7%AC%94%E8%AE%B0/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="Java易易笔记">Java易易笔记</span>
+            <span class="post-date" title="2023-02-28 18:57:46">2023/02/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2023/02/28/Maven/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="Maven操作指南">Maven操作指南</span>
+            <span class="post-date" title="2023-02-28 18:36:08">2023/02/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2023/02/27/JavaGUI%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2%E7%AC%94%E8%AE%B0/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="GUI图形化（已弃用）">GUI图形化（已弃用）</span>
+            <span class="post-date" title="2023-02-27 23:17:14">2023/02/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2023/02/27/Java%20SE/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="Java从入门到转行">Java从入门到转行</span>
+            <span class="post-date" title="2023-02-27 22:26:04">2023/02/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 "
+           href="/2023/02/27/Vue%E6%A1%86%E6%9E%B6/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="Vue框架">Vue框架</span>
+            <span class="post-date" title="2023-02-27 18:46:42">2023/02/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 系统 "
+           href="/2023/02/27/Linux%E6%8C%87%E4%BB%A4/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="Linux从入门到彻底放弃">Linux从入门到彻底放弃</span>
+            <span class="post-date" title="2023-02-27 14:52:41">2023/02/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 数据库 "
+           href="/2023/02/27/MySQL%E7%AC%94%E8%AE%B0/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="MySql从入门到删库跑路">MySql从入门到删库跑路</span>
+            <span class="post-date" title="2023-02-27 11:52:14">2023/02/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 设计模式 "
+           href="/2023/02/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%88%86%E7%B1%BB/"
+           data-tag="技术"
+           data-author="" >
+            <span class="post-title" title="设计模式之 “一人设计九人慌”">设计模式之 “一人设计九人慌”</span>
+            <span class="post-date" title="2023-02-27 11:52:14">2023/02/27</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-MySQL笔记" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">MySql从入门到删库跑路</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="数据库">数据库</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">技术</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-03-09 08:19:23'>2023-02-27 11:52</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:3.1k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MySQL%E7%AC%94%E8%AE%B0"><span class="toc-text">MySQL笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">数据库的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">什么是数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-text">数据库的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E8%A1%8C%E7%A7%B0%E4%B8%BA%E8%AE%B0%E5%BD%95%E3%80%81%E5%88%97%E7%A7%B0%E4%B8%BA%E5%AD%97%E6%AE%B5"><span class="toc-text">数据库的行称为记录、列称为字段</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="toc-text">数据库操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%BB%93%E6%9D%9F%E7%AC%A6"><span class="toc-text">修改结束符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%80%E5%87%BAMySQL"><span class="toc-text">退出MySQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BF%A1%E6%81%AF"><span class="toc-text">MySQL服务器信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%8C%87%E5%AE%9A%E5%8F%82%E6%95%B0"><span class="toc-text">创建数据库，使用指定参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B0%86%E5%AD%97%E7%AC%A6%E9%9B%86%E8%AE%BE%E7%BD%AE%E4%B8%BAgb2312"><span class="toc-text">创建数据库将字符集设置为gb2312</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99"><span class="toc-text">排序规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E5%B0%86%E5%AD%97%E7%AC%A6%E9%9B%86%E8%AE%BE%E7%BD%AE%E4%B8%BAutf8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99%E8%AE%BE%E7%BD%AE%E4%B8%BA%EF%BC%9Autf8-unicode-ci"><span class="toc-text">创建数据库，将字符集设置为utf8数据库排序规则设置为：utf8_unicode_ci</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">查看数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">使用数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BC%96%E7%A0%81"><span class="toc-text">修改数据库编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">删除数据库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#int"><span class="toc-text">int</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#float"><span class="toc-text">float</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#char%E5%92%8Cvarchar"><span class="toc-text">char和varchar</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#blob%E5%92%8Cext%E7%B1%BB%E5%9E%8B%EF%BC%88%E9%9D%9E%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%89"><span class="toc-text">blob和ext类型（非二进制字符串）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E6%97%A5%E6%9C%9F%E7%B1%BB%E5%9E%8B"><span class="toc-text">时间日期类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F"><span class="toc-text">日期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E9%97%B4"><span class="toc-text">时间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4"><span class="toc-text">日期时间</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Data"><span class="toc-text">Data</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="toc-text">数据表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="toc-text">查看数据库中的数据表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="toc-text">使用数据表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="toc-text">创建数据表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%91%BD%E5%90%8D%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="toc-text">重命名数据表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%9A%84%E5%AD%97%E7%AC%A6%E9%9B%86"><span class="toc-text">修改表的字符集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%88%97"><span class="toc-text">添加列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E5%88%97%E5%90%8D%E7%A7%B0%EF%BC%8C%E7%B1%BB%E5%9E%8B"><span class="toc-text">修改列名称，类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%9F%90%E4%B8%80%E4%B8%AA%E6%95%B0%E6%8D%AE"><span class="toc-text">修改某一个数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E8%A1%A8"><span class="toc-text">复制表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E8%A1%A8"><span class="toc-text">删除表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="toc-text">查找数据表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%B4%E6%97%B6%E8%A1%A8"><span class="toc-text">临时表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%B4%E6%97%B6%E8%A1%A8"><span class="toc-text">创建临时表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E8%AF%AD%E5%8F%A5%EF%BC%9A"><span class="toc-text">查看表的定义语句：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E9%BB%98%E8%AE%A4%E5%80%BC%E6%88%96%E8%80%85%E5%88%A0%E9%99%A4%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="toc-text">添加默认值或者删除默认值</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5%E5%90%8D%E6%93%8D%E4%BD%9C"><span class="toc-text">字段名操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5"><span class="toc-text">删除字段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E6%95%B0%E6%8D%AE%E8%A1%A8%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="toc-text">在数据表中使用默认值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%95%E5%85%A5%E6%96%B0%E4%BF%A1%E6%81%AF"><span class="toc-text">录入新信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E6%95%B0%E6%8D%AE%E8%A1%A8%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%BB%98%E8%AE%A4%E5%80%BC-1"><span class="toc-text">在数据表中使用默认值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A6%E6%9D%9F"><span class="toc-text">约束</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%A6%E6%9D%9F%E5%88%86%E7%B1%BB"><span class="toc-text">约束分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E7%BA%A6%E6%9D%9F"><span class="toc-text">插入约束</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E5%90%88%E4%B8%BB%E9%94%AE"><span class="toc-text">组合主键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Enum-%E6%9E%9A%E4%B8%BE"><span class="toc-text">Enum() 枚举</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%96%E9%94%AE%E7%BA%A6%E6%9D%9F"><span class="toc-text">**外键约束 **</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%BA%A6%E6%9D%9F"><span class="toc-text">删除约束</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%A2%9E%E9%95%BF%E5%88%97"><span class="toc-text">自动增长列</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="MySQL笔记"><a href="#MySQL笔记" class="headerlink" title="MySQL笔记"></a>MySQL笔记</h1><h2 id="数据库的概念"><a href="#数据库的概念" class="headerlink" title="数据库的概念"></a>数据库的概念</h2><h3 id="什么是数据库"><a href="#什么是数据库" class="headerlink" title="什么是数据库"></a>什么是数据库</h3><p>​    数据库是用于存储和管理数据的仓库</p>
+<p>​    每个数据库都有一个或多个不同的API用于创建、访问，管理，搜索和复制所保存的数据</p>
+<h3 id="数据库的特点"><a href="#数据库的特点" class="headerlink" title="数据库的特点"></a>数据库的特点</h3><ol>
+<li>数据以表格的形式出现</li>
+<li>每行为各种记录名称</li>
+<li>每列为记录名称所对应的数据域</li>
+<li>许多的行和列组成一张表单</li>
+<li>若干的表单组成数据库（database）</li>
+</ol>
+<h3 id="数据库的行称为记录、列称为字段"><a href="#数据库的行称为记录、列称为字段" class="headerlink" title="数据库的行称为记录、列称为字段"></a>数据库的行称为记录、列称为字段</h3><h2 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h2><h3 id="修改结束符"><a href="#修改结束符" class="headerlink" title="修改结束符"></a>修改结束符</h3><p>​    delimiter 新结束符$</p>
+<h3 id="退出MySQL"><a href="#退出MySQL" class="headerlink" title="退出MySQL"></a>退出MySQL</h3><p>​    exit</p>
+<p>​    quit</p>
+<h3 id="MySQL服务器信息"><a href="#MySQL服务器信息" class="headerlink" title="MySQL服务器信息"></a>MySQL服务器信息</h3><p>​    Status；</p>
+<h3 id="创建数据库，使用指定参数"><a href="#创建数据库，使用指定参数" class="headerlink" title="创建数据库，使用指定参数"></a>创建数据库，使用指定参数</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create database （数据库名）</span><br><span class="line"></span><br><span class="line">create database if not exists （库名）	#如果不存在会被创建，而不会报错</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建数据库将字符集设置为gb2312"><a href="#创建数据库将字符集设置为gb2312" class="headerlink" title="创建数据库将字符集设置为gb2312"></a>创建数据库将字符集设置为gb2312</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database yym default character set gb2312;</span><br></pre></td></tr></table></figure>
+
+<h3 id="排序规则"><a href="#排序规则" class="headerlink" title="排序规则"></a>排序规则</h3><p>​    collation 校对规则</p>
+<p>​    show collation：查看可用的排序规则</p>
+<h3 id="创建数据库，将字符集设置为utf8数据库排序规则设置为：utf8-unicode-ci"><a href="#创建数据库，将字符集设置为utf8数据库排序规则设置为：utf8-unicode-ci" class="headerlink" title="创建数据库，将字符集设置为utf8数据库排序规则设置为：utf8_unicode_ci"></a>创建数据库，将字符集设置为utf8数据库排序规则设置为：utf8_unicode_ci</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database abc default character set utf8 default collate utf8_unicode_ci;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库"></a>查看数据库</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">show databases;</span><br><span class="line">#查看数据库列表</span><br><span class="line"></span><br><span class="line">show create database mysql;</span><br><span class="line">#查看数据库定义（字符集和排序规则）</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用数据库"><a href="#使用数据库" class="headerlink" title="使用数据库"></a>使用数据库</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改数据库编码"><a href="#修改数据库编码" class="headerlink" title="修改数据库编码"></a>修改数据库编码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter database yym default character set gbk default collate gbk_unicode_ci；</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop database mysql;	#一次只能删除一个</span><br></pre></td></tr></table></figure>
+
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="int"><a href="#int" class="headerlink" title="int"></a>int</h3><p>​    int所占字节数四个字节</p>
+<p>​    bigint                  八</p>
+<p>​    tinyint                 一</p>
+<p>​    smallint              二</p>
+<p>​    mediumint          三</p>
+<p>​    适用于：有数值 有大小比较的</p>
+<p>​    数量 单价 字段名</p>
+<h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3><p>​    浮点型数据类型 ：有小数点的数值</p>
+<p>​    float（m，d）</p>
+<p>​    double（m，d）</p>
+<p>​    m：该数值有几位整数</p>
+<p>​    d：位于小数点后面有几位</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>​    数据的组成：字母，汉字，数字符号、特殊符号</p>
+<p>​    构成的数据对象</p>
+<p>​    身份证号、编号、电话号码、联系方式、名称</p>
+<h4 id="char和varchar"><a href="#char和varchar" class="headerlink" title="char和varchar"></a>char和varchar</h4><p>​    char：定长字符串，长度可以使0-255之间任何数</p>
+<p>​        当保存char的值的时候，在他们的右边填充空格来达到指定的长度</p>
+<p>​    varchar：可变字符串，长度可以0-65535之间的任何数</p>
+<p>​        只保存需要的字符数，另外再加一个字节来记录n+1</p>
+<p>​    varchar（8）    13  14个</p>
+<p>​    汉字占两个字节，数字字母占一个字节</p>
+<p>​    超出char和varchar规定的长度，将对其进项裁剪以适应，如果被裁减的字符不是空格，则会发出一条警告</p>
+<h3 id="blob和ext类型（非二进制字符串）"><a href="#blob和ext类型（非二进制字符串）" class="headerlink" title="blob和ext类型（非二进制字符串）"></a>blob和ext类型（非二进制字符串）</h3><p>​    用于存储声音、视频、图像等数据</p>
+<p>​    例如插入照片</p>
+<h3 id="时间日期类型"><a href="#时间日期类型" class="headerlink" title="时间日期类型"></a>时间日期类型</h3><h4 id="日期"><a href="#日期" class="headerlink" title="日期"></a>日期</h4><p>​    data格式：yyyy-mm-dd 支持范围：1000-01-01~9999-12-31</p>
+<h4 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h4><p>​    time：hh：mm：ss范围：-838:59:59~838:59:59小时可以表示超过一天的时间（大于二十四小时）</p>
+<h4 id="日期时间"><a href="#日期时间" class="headerlink" title="日期时间"></a>日期时间</h4><p>​    datetime:表示日期和时间 格式：yyyy-mm-dd hh:mm:ss 1000-01-01 00:00:00~9999-12-31 23:59:59 2022-03-23 08:18:50</p>
+<h3 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h3><p>​    数据类型：注册时间、订购时间</p>
+<h2 id="数据表"><a href="#数据表" class="headerlink" title="数据表"></a>数据表</h2><h3 id="查看数据库中的数据表"><a href="#查看数据库中的数据表" class="headerlink" title="查看数据库中的数据表"></a>查看数据库中的数据表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show tables;</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用数据表"><a href="#使用数据表" class="headerlink" title="使用数据表"></a>使用数据表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table teacher(</span><br><span class="line">     name varchar(10),</span><br><span class="line">     age int(2),</span><br><span class="line">     submission_date DATE,</span><br><span class="line">     tel int(20));</span><br></pre></td></tr></table></figure>
+
+<h3 id="重命名数据表"><a href="#重命名数据表" class="headerlink" title="重命名数据表"></a>重命名数据表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rename table 旧表名 to 新表名</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改表的字符集"><a href="#修改表的字符集" class="headerlink" title="修改表的字符集"></a>修改表的字符集</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 character set 字符集名称;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">status；	#查看系统字符集设置，包括所有的字符集设置</span><br><span class="line"></span><br><span class="line">#当客户端、连接器、返回值的字符集相同，并且都是gbk的时候，我们可以采取如下的简写方式：</span><br><span class="line">set names gbk;</span><br><span class="line">#这就话其实包含了三层意思：</span><br><span class="line">set character_set_client=gbk;</span><br><span class="line">set character_set_connection=gbk;</span><br><span class="line">set character_set_results=gbk;</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加列"><a href="#添加列" class="headerlink" title="添加列"></a>添加列</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 add 列名 数据类型;</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改列名称，类型"><a href="#修改列名称，类型" class="headerlink" title="修改列名称，类型"></a>修改列名称，类型</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 change 列名 新列别 新数据类型;</span><br><span class="line">alter table 表名 modify 列名 新数据类型;</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改某一个数据"><a href="#修改某一个数据" class="headerlink" title="修改某一个数据"></a>修改某一个数据</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update 表名 set 要更改列名=801 where 查找的列名=&#x27;C罗&#x27;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="复制表"><a href="#复制表" class="headerlink" title="复制表"></a>复制表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">create table 新表名 like 旧表名;</span><br><span class="line">insert into 新表名 select * from 旧表名;</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop table if exists 表名;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查找数据表"><a href="#查找数据表" class="headerlink" title="查找数据表"></a>查找数据表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#查询所有字段</span><br><span class="line">select*from 表名;</span><br><span class="line">#查询指定字符</span><br><span class="line">select 字段名 from 表名;</span><br><span class="line">#查询年龄小于25岁的人</span><br><span class="line">select*from 表名 where age&lt;25;</span><br><span class="line">#查询年龄为18和20的人</span><br><span class="line">select*from 表名 age in (18,20);</span><br><span class="line">#	%用于匹配任意长度的字符串。例如，字符串“a%”匹配以字符a开始任意长度的字符串</span><br><span class="line">#	_用于匹配一个任意的字符串。例如，字符串&quot;ab_&quot;匹配&quot;ab&quot;开始长度为3的字符串，如abc、abp等</span><br><span class="line">select * from student where name link &quot;r%&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="临时表"><a href="#临时表" class="headerlink" title="临时表"></a>临时表</h3><p>​    temporary</p>
+<h4 id="创建临时表"><a href="#创建临时表" class="headerlink" title="创建临时表"></a>创建临时表</h4><p>​    MySQL 临时表在我们需要保存一些临时数据时是非常有用的。临时表只在当前连接可见，当关闭连接时，Mysql会自动删除表并释放所有空间。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create temporary table 表名;</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看表的定义语句："><a href="#查看表的定义语句：" class="headerlink" title="查看表的定义语句："></a>查看表的定义语句：</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show create table 表名;</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加默认值或者删除默认值"><a href="#添加默认值或者删除默认值" class="headerlink" title="添加默认值或者删除默认值"></a>添加默认值或者删除默认值</h4><p>​    change[colunm]旧的字段名 新的字段名 字段的定义——修改字段的名称或者字段的定义</p>
+<p>​    modify[column]字段名 字段的新定义——修改字段的定义</p>
+<p>​    drop[column]字段名——删除字段</p>
+<p>​    rename to 新表名——为表重命名</p>
+<h2 id="字段名操作"><a href="#字段名操作" class="headerlink" title="字段名操作"></a>字段名操作</h2><h3 id="删除字段"><a href="#删除字段" class="headerlink" title="删除字段"></a>删除字段</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table 表名 drop[column] 字段名；</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="在数据表中使用默认值"><a href="#在数据表中使用默认值" class="headerlink" title="在数据表中使用默认值"></a>在数据表中使用默认值</h3><p>​    create table 表名(字段名1 数据类型 default 默认值)</p>
+<p>​    中文字符不识别：set names gbk；</p>
+<p>​    日期型的字段：timestamp</p>
+<p>​    该类型如果没有手动给定值增加当前的日期，那么你使用timestamp类型直接输出当前系统的日期和时间</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create table t1(id char(10),date1 timestamp);</span><br></pre></td></tr></table></figure>
+
+<h3 id="录入新信息"><a href="#录入新信息" class="headerlink" title="录入新信息"></a>录入新信息</h3><p>​    insert语句</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into 表名 values(内容1)</span><br></pre></td></tr></table></figure>
+
+<p>​    为表里面所有字段都增加内容</p>
+<p>​    insert into 表名(字段名1，字段名2) values（‘内容1’,’内容2’);</p>
+<p>​    为表中部分字段增加内容</p>
+<p>​    注意事项：为表增加内容，内容是需要用单引号引起来。字段名是不需要用引号引起来的。</p>
+<p>​    整形数据类型在增加内容的时候可以省略单引号。浮点型 int float double</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">insert into Player (name,age,club,transfer,jqs,Country) </span><br><span class="line">-&gt; values </span><br><span class="line">-&gt;(&#x27;梅西&#x27;,35,&#x27;巴黎圣日耳曼&#x27;,&#x27;2021-08-11&#x27;,769,&#x27;阿根廷&#x27;);</span><br></pre></td></tr></table></figure>
+
+<p>​    为表添加多组数据</p>
+<p>​    验证：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select*from 表名;	#查看该表中存在的数据内容</span><br></pre></td></tr></table></figure>
+
+<h3 id="在数据表中使用默认值-1"><a href="#在数据表中使用默认值-1" class="headerlink" title="在数据表中使用默认值"></a>在数据表中使用默认值</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create table 表名 (字段名 数据类型 not null default &quot;默认名&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>举例：创建一个教师表**teacher,**包括的字段有教师编号、姓名、性别、生日、联系电话，所在系部编号，其中教师的性别字段有默认值：女。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Create table teacher(teacherid char(10),</span><br><span class="line"></span><br><span class="line">teachername varchar(10),</span><br><span class="line"></span><br><span class="line">teachersex char(2) default &quot;女&quot; ,</span><br><span class="line"></span><br><span class="line">teacherbirthday date,</span><br><span class="line"></span><br><span class="line">telephone char(11),</span><br><span class="line"></span><br><span class="line">departmentid char(8));</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>对表中定义内容与顺序大致为：字段名</strong> <strong>数据类型</strong> <strong>宽度</strong> <strong>非空约束的定义</strong> <strong>默认值</strong> <strong>自动增长列</strong> <strong>其他约束、字段的描述性文字</strong></em><em>(comment)</em>**</p>
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CRATE TABLE customers    </span><br><span class="line">-&gt;(    </span><br><span class="line">-&gt; use_id int(5) not null default &quot;用户名&quot; atuo_increment  );</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="约束"><a href="#约束" class="headerlink" title="约束"></a><strong>约束</strong></h2><p><strong>对字段取值进行限制，我们称为约束。</strong></p>
+<p><strong>约束关键字及定义语句：主体部分，由于对字段的取值有各种不同的限定，因此，表中的约束页分为若干种，每种约束的关键字不同，</strong> <strong>约束的定于语句也不同</strong></p>
+<h3 id="约束分类"><a href="#约束分类" class="headerlink" title="约束分类"></a>约束分类</h3><ul>
+<li><strong>not null（非空约束）</strong> - 指示某列不能存储 NULL 值。</li>
+<li><strong>unique（唯一约束）</strong> - 保证某列的每行必须是唯一的值。</li>
+<li><strong>primary key（主键约束）</strong> - 非空约束 和 唯一约束的结合，确保某列（或两个列多个列的结合）不为空且有唯一标识，有助于更容易更快速地找到表中的一个特定的记录。</li>
+<li><strong>foreign key（外键约束）</strong> - 保证一个表中的数据匹配另一个表中的值的参照完整性。</li>
+<li><strong>check（限制）</strong> - 限制值的范围</li>
+<li><strong>default（默认约束）</strong> - 规定没有给列赋值时的默认值。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">create table Persons(</span><br><span class="line">	P_Id int not null,</span><br><span class="line">	LastName varchar(255) unique,</span><br><span class="line">	FirstName varchar(255) primary key,</span><br><span class="line">	Address varchar(255) foreign key,</span><br><span class="line">	City varchar(255) default &quot;北京&quot;,</span><br><span class="line">	check (P_Id&gt;0)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入约束"><a href="#插入约束" class="headerlink" title="插入约束"></a>插入约束</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#格式一:在创建表的时候，直接将约束定义语句放在字段之后</span><br><span class="line">create table department(</span><br><span class="line">    departmentID char(10) not null primary key,</span><br><span class="line">    Departmentname varchar(10)</span><br><span class="line">);</span><br><span class="line">#格式二：字段定义完毕之后，在单独定义约束</span><br><span class="line">create table department(</span><br><span class="line">    departmentID char(10),</span><br><span class="line">	primary key(departmentID),</span><br><span class="line">	departmentname varchar(10));</span><br><span class="line">#格式三：为约束命名</span><br><span class="line">create table department(</span><br><span class="line">    departmentID char(10),</span><br><span class="line">	constraint pk_id Primary key(departmentID),</span><br><span class="line">	departmentname varchar(10)</span><br><span class="line">);</span><br><span class="line">#格式4：</span><br><span class="line">alter table 表名 add 字段名(条件) primary key(字段);</span><br></pre></td></tr></table></figure>
+
+<h3 id="组合主键"><a href="#组合主键" class="headerlink" title="组合主键"></a><strong>组合主键</strong></h3><p>表中主键字段需要多个字段组合起来充当，来满足主键约束的要求。</p>
+<p>特征：每个字段允许有重复值，但是组合在一起不可以重复，而且组合中每个字段都不可以取空值。</p>
+<p>格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; create table tb_emp</span><br><span class="line">  -&gt; (</span><br><span class="line">  -&gt; name VARCHAR(25),</span><br><span class="line">  -&gt; deptId INT(11),</span><br><span class="line">  -&gt; salary FLOAT,</span><br><span class="line">  -&gt; PRIMARY KEY(id,deptId)</span><br><span class="line">  -&gt; );</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Create table student</span><br><span class="line"></span><br><span class="line">(id char(10) not null,</span><br><span class="line"></span><br><span class="line">Sex char(2) not null check(sex in(“男”,”女”)));</span><br><span class="line"></span><br><span class="line">         Check(sex=”男”or sex=”女”)</span><br><span class="line"></span><br><span class="line">In:操作符满足多个条件中的一个</span><br></pre></td></tr></table></figure>
+
+<h3 id="Enum-枚举"><a href="#Enum-枚举" class="headerlink" title="Enum() 枚举"></a><strong>Enum()</strong> <strong>枚举</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Create table student</span><br><span class="line"></span><br><span class="line">(id char(10) not null,</span><br><span class="line"></span><br><span class="line">Sex enum(“男”,”女”));</span><br></pre></td></tr></table></figure>
+
+<p>举例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">#创建表student 1,字段：学号、出生日期、学分，要求出生日期必须大于1980-01-01.</span><br><span class="line"></span><br><span class="line">Create table student1</span><br><span class="line"></span><br><span class="line">(学号 char(10) not null,</span><br><span class="line"></span><br><span class="line">出生日期 date not null,</span><br><span class="line"></span><br><span class="line">学分 int,</span><br><span class="line"></span><br><span class="line">Check(出生日期&gt;’1980-01-01’));</span><br><span class="line"></span><br><span class="line">#创建s2表，字段：学号、性别，要求：性别这列的所有值来源于student表中”性别列中。</span><br><span class="line"></span><br><span class="line">Select </span><br><span class="line">Create table s2</span><br><span class="line"></span><br><span class="line">(学号 char(10) not null,</span><br><span class="line"></span><br><span class="line">性别 char(2) not null,</span><br><span class="line"></span><br><span class="line">Check(性别in (select sex from student))</span><br><span class="line"></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">In 操作符：满足多个条件中的一个</span><br><span class="line"></span><br><span class="line">#创建s3，字段有：学号、最好成绩、平均成绩，要求：最好成绩必须大于平均成绩。</span><br><span class="line">Create table s3(</span><br><span class="line">学号 char(10) not null,</span><br><span class="line"></span><br><span class="line">最好成绩 int(2) not null,</span><br><span class="line"></span><br><span class="line">平均成绩 int(2) not null,</span><br><span class="line"></span><br><span class="line">Check(最好成绩&gt;平均成绩));</span><br></pre></td></tr></table></figure>
+
+<h3 id="外键约束"><a href="#外键约束" class="headerlink" title="**外键约束 **"></a>**外键约束 **</h3><p>（foreign key)</p>
+<p>例如：学生选课表 学号—学生基本信息表 学号 </p>
+<p>​           点名系统表 学号–学生基本信息表 学号</p>
+<p>一个表（子表）中某字段的取值应该参照另一个表（父表）中某字段的取值，我们就称为外键约束。</p>
+<p>被约束的表通常称为子表</p>
+<p>约束子表的表称为父表</p>
+<p>外键约束定义在子表</p>
+<p>四点限制：</p>
+<p>1）子表中外键字段的数据类型要和父表中的参考字段的数据一致 int int </p>
+<p>2）父表的参考字段必须定义为主键约束或者是唯一键约束，才能约束子表中外键约束。</p>
+<p>3）父表中的主键值或者唯一键的值一旦被子表参照，那么这些值就不能随意修改或删除。</p>
+<p>4）子表中外键字段可以取空值，但是如果有值必须在父表参照列的取值范围内。</p>
+<p><font color='blue' style="background:#ccc">外键定义：foreign key(子表字段名) references 父表(主键字段/唯一键字段）</font></p>
+<p>创建book_ref表，字段：图书编号、书名、出版日期，要求：所有book_ref表中的图书编号都必须参照book表中图书编号字段，假设已经创建book表，图书编号作为book<strong>表中的主键设置。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create table book_ref(</span><br><span class="line">    图书编号 char(10),</span><br><span class="line">    书名 varchar(20),</span><br><span class="line">    出版日期 date,</span><br><span class="line">    foreign key (图书编号) references book(bookid)\</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除约束"><a href="#删除约束" class="headerlink" title="删除约束"></a><strong>删除约束</strong></h3><ol>
+<li>   删除主键</li>
+</ol>
+<p> <strong>Alter table</strong> <strong>表名</strong> <strong>drop primary key;</strong> <strong>注意：不需要加主键的约束名</strong></p>
+<ol>
+<li>删除表中的外键</li>
+</ol>
+<p><strong>Alter table</strong> <strong>表名</strong> <strong>drop foreign key</strong> <strong>外键约束的名称</strong></p>
+<p><strong>Create table t2(id char(10) primary key); t2****：父表</strong></p>
+<p><strong>Create table t3(id char(10),constraint fk_id foreign key(id) references t2(id));</strong></p>
+<p><strong>Alter table t3 drop foreign key fk_id;</strong></p>
+<h3 id="自动增长列"><a href="#自动增长列" class="headerlink" title="自动增长列"></a><strong>自动增长列</strong></h3><p><strong>Auto_increment</strong> </p>
+<p><strong>注意：</strong></p>
+<p><strong>定义为****auto_increment</strong> *<em>属性的字段，必须是</em><em><strong>整型</strong></em>*，必须是主键或者唯一键</p>
+<p><strong>Auto_increment</strong> *<em>的初始值可以在表后面的属性中使用”</em><em>*<em>auto_increment=<strong><strong>初始值</strong></strong>”</em>*</em><em>来自行定义，否则默认值为</em><em><strong>1</strong></em><em>开始。</em>*</p>
+<p><strong>创建产品信息表</strong></p>
+<p><strong>包含：产品编号、产品名称，要求将产品编号设置自动增长列属性。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create table product(</span><br><span class="line">    id int auto_increment unique,</span><br><span class="line">    Name varchar(10)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: 'yelog.github.io',
+            owner: 'yelog',
+            admin: ['yelog'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</html>
